@@ -85,6 +85,6 @@ If you'd like to contribute:
 
 
 ## Contact
-For further inquiries, contact [your email or GitHub link].
+For further inquiries, contact hitesh009911.
 
 
