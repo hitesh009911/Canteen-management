@@ -1,0 +1,12 @@
+asgiref
+Django
+Pillow
+sqlparse
+tzdata
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+
+Note: To get paypal button in cart ,you need to connect internet
