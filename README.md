@@ -24,6 +24,7 @@ To run this project, ensure you have the following dependencies installed:
 │── module2.py               # Implements [specific feature]
 │── utils.py                 # Utility functions used across modules
 │── config.py                # Configuration settings
+│── manage.py                # Management script for migrations and admin tasks
 │── README.md                # This documentation
 │── requirements.txt         # Python dependencies
 └── data/                    # Folder for input/output files (if applicable)
@@ -44,7 +45,12 @@ To run this project, ensure you have the following dependencies installed:
    ```sh
    pip install -r requirements.txt
    ```
-4. Run the program:
+4. Apply migrations (if using a database):
+   ```sh
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+5. Run the program:
    ```sh
    python main.py
    ```
@@ -52,6 +58,17 @@ To run this project, ensure you have the following dependencies installed:
 
 ## Configuration
 Modify `config.py` to customize settings such as database connections, API keys, or other configurable parameters.
+
+## Managing the Application
+- To create and apply database migrations:
+  ```sh
+  python manage.py makemigrations
+  python manage.py migrate
+  ```
+- To run the management script for other admin tasks:
+  ```sh
+  python manage.py [command]
+  ```
 
 ## Troubleshooting
 - If you encounter missing module errors, try reinstalling dependencies.
@@ -66,9 +83,8 @@ If you'd like to contribute:
 4. Push to the branch (`git push origin feature-branch`)
 5. Open a pull request
 
-## License
-[Specify the license under which the project is distributed]
 
 ## Contact
 For further inquiries, contact [your email or GitHub link].
+
 
